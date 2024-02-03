@@ -13,13 +13,25 @@ This guide provides step-by-step instructions on how to configure SCIM provision
 - Databricks recommends that you provision users, service principals, and groups to the account level and manage the assignment of users and groups to workspaces within Azure Databricks.
 - Your workspaces must be enabled for identity federation, in order to manage the assignment of users to workspaces.
 - If you have any workspaces that are not enabled for identity federation, you should continue to provision users, service principals, and groups directly to those workspaces.
+- We will provision at a account level
 
 ## 2. Generate a SCIM token and URL
 - You need a SCIM token and a SCIM URL to configure your Microsoft Entra ID application for provisioning.
 - To generate a SCIM token and a SCIM URL for the account level, you must have the Cloud Application Administrator role in Microsoft Entra ID and the account admin role in Azure Databricks.
-- To generate a SCIM token and a SCIM URL for the workspace level, you must have the Cloud Application Administrator role in Microsoft Entra ID and the workspace admin role in Azure Databricks.
-- Log in to the Azure Databricks account console or the Azure Databricks workspace, and copy the SCIM token and the SCIM URL.
+  
+- Log in to the [Azure Databricks account console](https://accounts.azuredatabricks.net/)
 
+- Click Settings =>  User Provisioning =>  Enable user provisioning
+
+  <img width="866" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/82439bf1-476a-4701-8077-78dbe0b51cf1">
+
+  
+- Copy the SCIM token and the Account SCIM URL. You will use these to configure your Microsoft Entra ID application.
+
+  <img width="898" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/8ac3014e-8b4a-4a5d-b7e8-d1332af9e515">
+
+
+  
 ## 3. Create an enterprise application in Microsoft Entra ID
 - In your Azure portal, go to Microsoft Entra ID > Enterprise Applications.
 - Click + New Application above the application list. Under Add from the gallery, search for and select Azure Databricks SCIM Provisioning Connector.
