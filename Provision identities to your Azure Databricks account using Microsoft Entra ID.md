@@ -1,6 +1,6 @@
 # Configure SCIM Provisioning using Microsoft Entra ID for Azure Databricks
 
-This guide provides step-by-step instructions on how to configure SCIM provisioning using Microsoft Entra ID (formerly Azure Active Directory) for Azure Databricks.
+This guide provides step-by-step instructions on how to configure SCIM provisioning using Microsoft Entra ID (formerly Azure Active Directory) for Azure Databricks.You can sync account-level users and groups from your Microsoft Entra ID tenant to Azure Databricks using a SCIM provisioning connector.
 
 ## 1. Choose the provisioning level
 - You can set up provisioning to Azure Databricks using Microsoft Entra ID at the account level or at the workspace level.
