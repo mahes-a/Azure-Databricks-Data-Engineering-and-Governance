@@ -20,25 +20,57 @@ This storage account will contain Unity Catalog managed tables and volumes. This
 You can create only one metastore per region. You must use the same region for your metastore and storage container.
 
 
-
 ## Step 2: Create an access connector for Azure Databricks
 
-1. As an account admin, log in to the account console.
-2. Click **Access Connectors**.
-3. Click **Create Access Connector**.
-4. Select **Azure Databricks** as the type of access connector.
-5. Provide a name and a region for the access connector. The name must be unique within the account and the region must match the metastore region.
-6. Click **Create**.
-7. Copy the resource ID of the access connector. You will need it to enable your workspace for Unity Catalog.
+The Access Connector for Azure Databricks is a first-party Azure resource that lets you connect managed identities to an Azure Databricks account.
+
+Each access connector for Azure Databricks can contain either one system-assigned managed identity or one user-assigned managed identity. If you want to use multiple managed identities, create a separate access connector for each.
+
+1. Log in to the Azure Portal as a Contributor or Owner of a resource group.
+
+2. Click + Create or Create a new resource.
+
+3. Search for Access Connector for Azure Databricks and select it.
+
+4. Click Create.
+
+On the Basics tab, accept, select, or enter values for the following fields:
+
+Subscription: This is the Azure subscription that the access connector will be created in. The default is the Azure subscription you are currently using. It can be any subscription in the tenant.
+Resource group: This is the Azure resource group that the access connector will be created in.
+Name: Enter a name that indicates the purpose of the connector.
+Region: This should be the same region as the storage account that you will connect to.
+Click Review + create.
+
+<img width="632" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/f43dd84a-001f-4fd0-b13c-a554588382ef">
+
+
+5. When you see the Validation Passed message, click Create.
+
+6. When the deployment succeeds, the access connector is deployed with a system-assigned managed identity.
+
+7. When the deployment is complete, click Go to resource.
+
+8. Make a note of the Resource ID.
+
+<img width="1197" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/c64c2db0-e3aa-49b2-aef4-3ef3e9bd4958">
 
 
 ## Step 3: Create the metastore and attach a workspace
 
+Before you begin read the prereqs from [here](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/create-metastore#before-you-begin)
+
 1. As an account admin, log in to the account console.
-2. Click **Metastores**.
-3. Click **Create Metastore**.
+2. Click on **Data**->**Create Metastore**
+
+   <img width="1192" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/9eae3bc2-668b-4b56-bc1c-787f07f3e90f">
+
 4. Provide a name and a region for the metastore. The name must be unique within the account and the region.
-5. Provide an ADLS Gen2 path for the metastore. This is where the metadata and the data for managed tables and managed volumes will be stored. You can use an existing storage account or create a new one.
+5. Provide an ADLS Gen2 path for the metastore created in step 1. This is where the metadata and the data for managed tables and managed volumes will be stored.
+6. Provide the resource id of the access connector created in Step 2
+
+ <img width="506" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/d524dcc3-9aed-4b1c-8bd0-2d2dbf871d4a">
+
 6. Click **Create**.
 
 ## Step 4: Assign the Unity Catalog resource to a workspace
