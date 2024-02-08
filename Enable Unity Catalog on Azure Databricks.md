@@ -71,18 +71,29 @@ Before you begin read the prereqs from [here](https://learn.microsoft.com/en-us/
 
  <img width="506" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/d524dcc3-9aed-4b1c-8bd0-2d2dbf871d4a">
 
-6. Click **Create**.
+
 
 ## Step 4: Assign the Unity Catalog resource to a workspace
 
+If you have not created a Azure Databricks workspace , Please follow the steps [here](https://learn.microsoft.com/en-us/azure/databricks/getting-started/#use-the-portal-to-create-an-azure-databricks-workspace)
+
 1. As an account admin, log in to the account console.
-2. Click **Workspaces**.
-3. Select the workspace that you want to enable for Unity Catalog. The workspace must be in the same region as the metastore and the access connector.
-4. Click **Edit**.
-5. Click **Enable Unity Catalog**.
-6. Select the metastore that you created in step 1.
-7. Paste the resource ID of the access connector that you created in step 2.
-8. Click **Enable**.
+2. Click Catalog icon Data.
+3. Click the metastore name where workspace should be assigned.
+
+   <img width="1034" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/6a34a03b-3e00-4e88-af0c-f2a871778c1a">
+
+5. Click the Workspaces tab.
+6. Click Assign to workspaces.
+
+   <img width="1043" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/3356163a-136a-4870-973e-4c7f96fe14ea">
+
+8. Select one or more workspaces. You can type part of the workspace name to filter the list.
+
+   <img width="957" alt="image" src="https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/assets/120069348/f2a6aa78-4eba-4a70-9a5f-2318736fbaea">
+
+Click Assign.
+On the confirmation dialog, click Enable.
 
 ## Step 5: Create a new catalog in the data explorer
 
