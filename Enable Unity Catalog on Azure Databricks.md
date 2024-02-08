@@ -95,12 +95,3 @@ If you have not created a Azure Databricks workspace , Please follow the steps [
 Click Assign.
 On the confirmation dialog, click Enable.
 
-## Step 5: Create a new catalog in the data explorer
-
-1. As a workspace admin or a user with the `catalog:create` privilege, launch the workspace that you enabled for Unity Catalog.
-2. Click **Data** in the sidebar.
-3. Click **Create Catalog**.
-4. Provide a name and an external location for the catalog. The external location is a storage account where the data for the catalog will be stored. You can use the same storage account as the metastore or a different one.
-5. Click **Create**.
-
-You have successfully enabled Unity Catalog on Azure Databricks and created a new catalog. You can now create schemas and tables in the catalog, and grant permissions to other users or groups. For more information, see [Set up and manage Unity Catalog](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/create-metastore).
