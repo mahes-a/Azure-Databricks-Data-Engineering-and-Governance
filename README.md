@@ -12,16 +12,14 @@ Unlock the full potential of your data lake with Delta Lake, streamline user man
 
 # Exceution Steps 
 
-##### The modules can be executed in any order but a recommended approach is as below 
+## Provisioning identities to your Azure Databricks account using Microsoft Entra ID
+- Follow the steps in [01.Provision identities to your Azure Databricks account using Microsoft Entra ID.md](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/01.Provision%20identities%20to%20your%20Azure%20Databricks%20account%20using%20Microsoft%20Entra%20ID.md)
+- Ensure you have the right privileges required to setup the provisioning 
 
-## Delta Lake Basics
+## Setting up Your first unity catalog
 
-- Import the DeltaLake.dbc file under your user in Azure databricks workspace
-- Below notebooks should be imported under the DeltaLake folder
-
-  <img width="396" alt="image" src="https://github.com/mahes-a/AzureDatabricksDataEngineering/assets/120069348/4c3f4e1d-7ca2-4870-a56f-53f23b9809b3">
-
-- Execute the DeltaLake-Create Data notebook followed by 01-Getting-Started-With-Delta-Lake and 02-Delta-Lake-Performance
+- Follow the steps in [02.Enable Unity Catalog on Azure Databricks.md](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/02.Enable%20Unity%20Catalog%20on%20Azure%20Databricks.md)
+- Ensure you have the right privileges required to setup the provisioning 
 
 ## Medallion Architecture
 
