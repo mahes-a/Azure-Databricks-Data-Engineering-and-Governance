@@ -52,3 +52,9 @@ Unlock the full potential of your data lake with Delta Lake, streamline user man
 - Follow the steps in [09.Create DLT Pipeline from UI](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/09.Create%20DLT%20Pipeline%20from%20UI.md)
 
 
+## Clean-up Resources
+
+- Follow the steps in [10.Clean Up of Resources](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/10.Clean%20Up%20of%20Resources.md)
+
+
+
