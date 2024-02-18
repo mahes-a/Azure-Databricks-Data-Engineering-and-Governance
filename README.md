@@ -10,32 +10,45 @@ Unlock the full potential of your data lake with Delta Lake, streamline user man
 - How to set up simple Medallion Architecture using Delta Live Tables
 
 
+
 # Exceution Steps 
 
 ## Provisioning identities to your Azure Databricks account using Microsoft Entra ID
-- Follow the steps in [01.Provision identities to your Azure Databricks account using Microsoft Entra ID.md](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/01.Provision%20identities%20to%20your%20Azure%20Databricks%20account%20using%20Microsoft%20Entra%20ID.md)
-- Ensure you have the right privileges required to setup the provisioning 
+- Follow the steps in [01.Provision identities to your Azure Databricks account using Microsoft Entra ID](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/01.Provision%20identities%20to%20your%20Azure%20Databricks%20account%20using%20Microsoft%20Entra%20ID.md)
+- Ensure you have the right privileges required to setup the provisioning
+
+  
 
 ## Setting up Your first unity catalog
 
-- Follow the steps in [02.Enable Unity Catalog on Azure Databricks.md](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/02.Enable%20Unity%20Catalog%20on%20Azure%20Databricks.md)
-- Ensure you have the right privileges required to setup the provisioning 
+- Follow the steps in [02.Enable Unity Catalog on Azure Databricks](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/02.Enable%20Unity%20Catalog%20on%20Azure%20Databricks.md)
+- Ensure you have the right privileges required to setup the provisioning
+- Import and Execute the [03.Getting Started with Unity Catalog.sql
+](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/03.Getting%20Started%20with%20Unity%20Catalog.sql)
 
-## Medallion Architecture
 
-- Import the green_tripdata_2023-09.parquet and taxizonelookup.csv into DBFS
 
-  <img width="383" alt="image" src="https://github.com/mahes-a/AzureDatabricksDataEngineering/assets/120069348/300e65ee-1452-4434-b6a7-e909300a0ae1">
+## Setting up Your Delta Share
 
-- Import the MedallionDelta.dbc and execute the SimpleMedallion notebook
+- Import and execute the [04.Delta Sharing Getting Started](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/04.Delta%20Sharing%20Getting%20Started.sql)
+- Follow the steps in [05.DeltaSharingrecipients
+](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/05.DeltaSharingrecipients.md)
 
-  <img width="204" alt="image" src="https://github.com/mahes-a/AzureDatabricksDataEngineering/assets/120069348/1e1ad874-96f4-4724-84f7-2641270e69a7">
+
+
+## Delta Lake Basics
+
+- Import and execute the [06.Delta Lake Basics](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/06.Delta%20Lake%20Basics.py)
+
+## Setup your Medallion Architecture 
+
+- Import and execute the [07.Delta Lake Medallion.py](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/07.Delta%20Lake%20Medallion.py)
 
 
 ## Delta Live Table with Medallion Architecture
 
-- Import the DeltaLiveTable.dbc into user folder
+- Import the [08.DeltaLiveMedallion](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/08.DeltaLiveMedallion.py)
   
-- Setup the DeltaLive table using below notebook
+- Follow the steps in [09.Create DLT Pipeline from UI](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/09.Create%20DLT%20Pipeline%20from%20UI.md)
 
-  <img width="397" alt="image" src="https://github.com/mahes-a/AzureDatabricksDataEngineering/assets/120069348/c7a27d7a-3dbf-4425-80bc-e4404b997b36">
+
