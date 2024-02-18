@@ -23,6 +23,7 @@ Unlock the full potential of your data lake with Delta Lake, streamline user man
 
 - Follow the steps in [02.Enable Unity Catalog on Azure Databricks](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/02.Enable%20Unity%20Catalog%20on%20Azure%20Databricks.md)
 - Ensure you have the right privileges required to setup the provisioning
+- Setup a cluster to execute the Notebooks , [Refer here to create clusters](https://learn.microsoft.com/en-us/azure/databricks/compute/configure)
 - Import and Execute the [03.Getting Started with Unity Catalog.sql
 ](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/03.Getting%20Started%20with%20Unity%20Catalog.sql)
 
