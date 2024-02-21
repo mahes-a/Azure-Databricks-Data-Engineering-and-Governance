@@ -18,7 +18,6 @@ Unlock the full potential of your data lake with Delta Lake, streamline user man
 - Ensure you have the right privileges required to setup the provisioning
 
   
-
 ## Setting up Your first unity catalog
 
 - Follow the steps in [02.Enable Unity Catalog on Azure Databricks](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/02.Enable%20Unity%20Catalog%20on%20Azure%20Databricks.md)
