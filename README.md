@@ -27,6 +27,7 @@ Unlock the full potential of your data lake with Delta Lake, streamline user man
 ](https://github.com/mahes-a/Azure-Databricks-Data-Engineering-and-Governance/blob/main/03.Getting%20Started%20with%20Unity%20Catalog.sql)
 
 
+**It is advisable to possess the role of a Workspace Administrator when running the notebooks.**
 
 ## Setting up Your Delta Share
 
